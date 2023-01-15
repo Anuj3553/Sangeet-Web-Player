@@ -25,6 +25,7 @@ nav ul{
 nav ul li{
     padding: 0 12px;
 }
+
 .brand img{
     width: 44px;
     padding: 0 8px;
@@ -33,16 +34,7 @@ nav ul li{
     object-fit: cover;
     transform: scale(1.1);
 }
-.myAbout{
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
-.myHome{
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
+
 .brand {
     display: flex;
     align-items: center;
@@ -51,6 +43,41 @@ nav ul li{
     cursor: pointer;
     color: white;
     text-decoration: none;
+}
+
+.myHome{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.myAbout{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.myLogin{
+    position: absolute;
+    left: 80%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    align-items: center;    
+    display: flex;
+    height: 0.5%;
+}
+
+.mySignup{
+    position: absolute;
+    left: 85%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    height: 0.5%;
+    padding: 0 20px;
 }
 
 .container{
@@ -82,6 +109,7 @@ nav ul li{
 .icons{
     margin-top: 14px; 
 }
+
 .icons i{
     cursor: pointer;
 }
@@ -137,4 +165,51 @@ nav ul li{
     body {
     background-color: rgb(71, 247, 71);
     }
+}
+
+/* Search Bar */
+.search-box{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #080808;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.search-box:hover>.search-txt{
+    width: 200px;
+    padding: 0 10px;
+}
+
+.search-box:hover> .search-btn{
+    background: white;
+}
+
+.search-btn{
+    color: #04ff19;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
 }

@@ -9,11 +9,9 @@
         <link rel="stylesheet" href="style.css">
         </head>
 <body>
+    <!-- Top Navigation Bar -->
     <nav>
         <ul>
-            <li class="brand_img">
-
-            </li>
             <li class="brand"><a href="spotify_trans.gif"><img src="logo.png"></a></li>
             <li>
                 <a href="https://open.spotify.com/"class="brand" target="_blank">Spotify</a>
@@ -24,8 +22,23 @@
             <li>
                 <a href="https://support.spotify.com/us/article/what-is-spotify/" class="myAbout">About</a> 
             </li>
+            <!--Search box to find songs-->
+            <li class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <!-- Adding login and signup button -->
+            <li>
+                <a href="/Registration Form/Login_reg.html" class="myLogin">Login</a> <!--Login Button-->
+            </li>
+            <li>
+                <a href="/Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
+            </li>
         </ul>
     </nav>
+    <!-- Songs Container -->
     <div class="container">
         <div class="songList">
             <h1>Best of Songs - Spotify Hits</h1>
@@ -84,7 +97,6 @@
         </div>
         <div class="songBanner"></div>
     </div>
-
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
@@ -93,11 +105,14 @@
             <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
             <i class="fas fa-3x fa-step-forward" id="next"></i> 
         </div>
+        <!-- Song Info -->
         <div class="songInfo">
+            <!-- Playing GIF under progress bar -->
             <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
         </div>
     </div>
     <script src="script.js"></script>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
 </html>
