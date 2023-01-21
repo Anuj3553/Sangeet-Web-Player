@@ -78,7 +78,7 @@
     outline: none;
     background: transparent;
     color: white;
-e}
+}
 .submit-btn{
     width: 85%;
     padding: 10px 30px;
@@ -114,14 +114,14 @@ span{
 .bcLogo{
     width: 60px;
     position:fixed;
-    padding: 44px;
+    padding: 34px;
     cursor: pointer;
     object-fit: cover;
     transform: scale(1.1);
 }
 .brandName{
     position: fixed;
-    padding: 65px 115px;
+    padding: 55px 110px;
     font-size:larger;
     font-weight: bolder;
     cursor: pointer;
