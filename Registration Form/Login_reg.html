@@ -25,19 +25,20 @@
                 <a href="https://mobile.twitter.com/collegesaxis"><img src="tw.png" alt=""></a>
                 <a href="https://axiscolleges.org/"><img src="gp.png" alt=""></a>
             </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" >
-                <input type="checkbox" class="check-box"> <span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log in</button>
+            <form  id="login" class="input-group">
+                <input type="text" name="User Id (Login)" class="input-field" placeholder="User Id" required>
+                <input type="password" name="Password (Login)" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"> <span class="remLogin">Remember Password</span>
+                <a href="/index.html" class="submit-btn1" >Log in</a>
             </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" >
-                <input type="checkbox" class="check-box"> <span>I agree to the terms & conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+            <form name="submit-to-google-sheet" id="register" class="input-group">
+                <input type="text" name="User Id" class="input-field" placeholder="User Id" required>
+                <input type="email" name="Email Id" class="input-field" placeholder="Email Id" required>
+                <input type="password" name="Password" class="input-field" placeholder="Enter Password" >
+                <input type="checkbox" class="check-box" required> <span class="remLogin">I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn2">Register</button>
             </form>
+            <span id="msg"></span>
         </div>
     </div>
 
@@ -56,5 +57,23 @@
             z.style.left = "0";
         }
     </script>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRmYadk7zvVSGJMTgG5MCcbR9gl7HUFWXl85YuuRX4EVgK50eAexdVAU0jn0PWZVBJuQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Signup Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
 </body>
 </html>
