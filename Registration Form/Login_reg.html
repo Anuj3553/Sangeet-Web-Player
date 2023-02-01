@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration Form</title>
     <link rel="stylesheet" href="Login_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="hero">
@@ -25,23 +26,50 @@
                 <a href="https://mobile.twitter.com/collegesaxis"><img src="tw.png" alt=""></a>
                 <a href="https://axiscolleges.org/"><img src="gp.png" alt=""></a>
             </div>
-            <form  id="login" class="input-group">
-                <input type="text" name="User Id (Login)" class="input-field" placeholder="User Id" required>
-                <input type="password" name="Password (Login)" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"> <span class="remLogin">Remember Password</span>
-                <a href="/index.html" class="submit-btn1" >Log in</a>
-            </form>
-            <form name="submit-to-google-sheet" id="register" class="input-group">
-                <input type="text" name="User Id" class="input-field" placeholder="User Id" required>
-                <input type="email" name="Email Id" class="input-field" placeholder="Email Id" required>
-                <input type="password" name="Password" class="input-field" placeholder="Enter Password" >
+            <div  id="login" class="input-group" class="form-box">
+                <div>
+                    <i class="fa-regular fa-user" id="userIcon1"></i>
+                    <input type="text" name="User Id (Login)" class="input-field" placeholder="User Id" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-key" id="passIcon1"></i>
+                    <input type="password" name="Password (Login)" id="myInput1" class="input-field" placeholder= "Enter Password" required>
+                    <span class="eye" onclick="myFunction1()">
+                        <i class="fa fa-eye" id="hide1"></i>
+                        <i class="fa fa-eye-slash" id="hide2"></i>
+                    </span>
+                </div>
+                <div>
+                    <input type="checkbox" class="check-box"> <span class="remLogin">Remember Password</span>
+                </div>
+                <div>
+                    <a href="/index.html" class="submit-btn1">Log in</a>
+                </div>
+            </div>
+            <div name="submit-to-google-sheet" id="register" class="input-group">
+                <div>
+                    <i class="fa-regular fa-user" id="userIcon2"></i>
+                    <input type="text" name="User Id" class="input-field" placeholder="User Id" required>
+                </div>
+                <div>
+                    <i class="fa-regular fa-envelope" id="envelopeIcon2"></i>
+                    <input type="email" name="Email Id" class="input-field" placeholder="Email Id" required>
+                </div>
+                <div>
+                    <i class="fa-solid fa-key" id="passIcon2"></i>
+                    <input type="password" name="Password" id="myInput2" class="input-field" placeholder="Enter Password" required>
+                    <span class="eye" onclick="myFunction2()">
+                        <i class="fa fa-eye" id="hide11"></i>
+                        <i class="fa fa-eye-slash" id="hide22"></i>
+                    </span>
+                </div>
                 <input type="checkbox" class="check-box" required> <span class="remLogin">I agree to the terms & conditions</span>
                 <button type="submit" class="submit-btn2">Register</button>
-            </form>
+            </div>
             <span id="msg"></span>
         </div>
     </div>
-
+    <!-- For Toggle Login and Signup -->
     <script>
         var x = document.getElementById("login");
         var y = document.getElementById("register");
@@ -57,23 +85,62 @@
             z.style.left = "0";
         }
     </script>
+    <!-- For Linking data to Google Sheet Database -->
     <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRmYadk7zvVSGJMTgG5MCcbR9gl7HUFWXl85YuuRX4EVgK50eAexdVAU0jn0PWZVBJuQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRmYadk7zvVSGJMTgG5MCcbR9gl7HUFWXl85YuuRX4EVgK50eAexdVAU0jn0PWZVBJuQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Signup Successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        }, 5000)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-})
-</script>
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Signup Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- For Hide & Show Password in Login -->
+    <script>
+        function myFunction1(){
+            var x = document.getElementById("myInput1");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if(x.type == 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+    <!-- For Hide & Show Password in Signup -->
+    <script>
+        function myFunction2(){
+            var x = document.getElementById("myInput2");
+            var y = document.getElementById("hide11");
+            var z = document.getElementById("hide22");
+
+            if(x.type == 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

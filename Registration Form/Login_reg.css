@@ -158,3 +158,47 @@ span{
 .remLogin{
     position: sticky;
 }
+::placeholder{
+    color: #ccc;
+}
+.eye{
+    position: absolute;
+    height: 88px;
+    left: 253px;
+}
+#hide1{
+    display: none;
+}
+#hide11{
+    display: none;
+}
+.fa{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#userIcon1{
+    position: absolute;
+    right: 280px;
+    padding: 15px;
+}
+#userIcon2{
+    position: absolute;
+    right: 280px;
+    padding: 15px;
+}
+#envelopeIcon2{
+    position: absolute;
+    right: 280px;
+    padding: 15px;
+}
+#passIcon1{
+    position: absolute;
+    right: 280px;
+    padding: 15px
+}
+#passIcon2{
+    position: absolute;
+    right: 280px;
+    padding: 15px
+}
