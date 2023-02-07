@@ -44,6 +44,10 @@ nav ul li{
     color: white;
     text-decoration: none;
 }
+.brand:hover{
+    color: #04ff19;
+    text-decoration: underline;
+}
 
 .myHome{
     cursor: pointer;
@@ -66,6 +70,10 @@ nav ul li{
     align-items: center;    
     display: flex;
     height: 0.5%;
+}
+.myLogin:hover , .mySignup:hover{
+    color: rgb(22, 210, 22);
+    text-decoration: underline;
 }
 
 .mySignup{
@@ -163,8 +171,10 @@ nav ul li{
 /* For minimize screen background */
 @media only screen and (max-width: 1100px) {
     body {
-    background-color: rgb(71, 247, 71);
+    background-color: rgb(22, 210, 22);
+    background-size: cover;
     }
+
 }
 
 /* Search Bar */
