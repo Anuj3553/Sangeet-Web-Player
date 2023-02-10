@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="/logo1.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
 <body>
     <div class="hero">
         <div class="logoImg">
-            <a href="/Registration Form/logo_bc.png" target="_self"></a><img class="bcLogo" src="/Registration Form/logo_bc.png">
+            <a href="/Registration Form/logo_bc.png" target="_self"></a><img class="bcLogo" src="/Registration Form/logo1.png">
         </div>
-        <a href="/index.html" class="brandName">Spotify &#8250;</a>
+        <a href="/Registration Form/Login_reg.html" class="brandName">Sangeet &#8250;</a>
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
@@ -26,14 +26,14 @@
                 <a href="https://mobile.twitter.com/collegesaxis"><img src="tw.png" alt=""></a>
                 <a href="https://axiscolleges.org/"><img src="gp.png" alt=""></a>
             </div>
-            <form  id="login" class="input-group" class="form-box">
+            <form action="login.php" method="POST" id="login" class="input-group" class="form-box">
                 <div>
                     <i class="fa-regular fa-user" id="userIcon1"></i>
-                    <input type="text" name="User Id (Login)" class="input-field" placeholder="User Id" required>
+                    <input type="text" name="User Id (Login)" class="input-field" id="username" placeholder="User Id" required>
                 </div>
                 <div>
                     <i class="fa-solid fa-key" id="passIcon1"></i>
-                    <input type="password" name="Password (Login)" id="myInput1" class="input-field" placeholder= "Enter Password" required>
+                    <input type="password" name="Password (Login)" id="password" class="input-field" placeholder= "Enter Password" required>
                     <span class="eye" onclick="myFunction1()">
                         <i class="fa fa-eye" id="hide1"></i>
                         <i class="fa fa-eye-slash" id="hide2"></i>
@@ -43,7 +43,7 @@
                     <input type="checkbox" class="check-box"> <span class="remLogin">Remember Password</span>
                 </div>
                 <div>
-                    <a href="/index.html" class="submit-btn1">Log in</a>
+                    <a href="/index.html"><input type="button"  value="Login" onclick="submitForm()"></a>
                 </div>
             </form>
             <form name="submit-to-google-sheet" id="register" class="input-group">
@@ -107,7 +107,7 @@
     <!-- For Hide & Show Password in Login -->
     <script>
         function myFunction1(){
-            var x = document.getElementById("myInput1");
+            var x = document.getElementById("password");
             var y = document.getElementById("hide1");
             var z = document.getElementById("hide2");
 

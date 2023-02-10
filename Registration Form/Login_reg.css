@@ -79,18 +79,19 @@
     background: transparent;
     color: white;
 }
-.submit-btn1{
-    width: 20%;
-    padding: 15px 100px;
+input[type=button] {
+    width: 80%;
+    left: 10%;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
     cursor: pointer;
     margin: auto;
-    display: block;
     background: lime;
     font-weight: bolder;
     font-size: large;
     border: 0;
     outline: none;
-    text-decoration:none;
     position: relative;
     border-radius: 30px;
     color: white;

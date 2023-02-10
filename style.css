@@ -101,6 +101,12 @@ nav ul li{
     /* For Background Image */
     background-image: url('bg/bg_8.jpg');
 }
+#myVideo{
+    z-index: -1;
+    position: fixed;
+    right: 10px;
+    top: 0;
+}
 
 .bottom{
     position: sticky;
