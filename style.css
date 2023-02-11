@@ -47,12 +47,23 @@ nav ul li{
 .brand:hover{
     color: #04ff19;
     text-decoration: underline;
+    margin: 4px;
 }
 
 .myHome{
     cursor: pointer;
     color: white;
     text-decoration: none;
+}
+.myHome:hover{
+    text-decoration: underline;
+    padding: 2px;
+    font-size: 17px;
+}
+.myAbout:hover{
+    text-decoration: underline;
+    padding: 2px;
+    font-size: 17px;
 }
 
 .myAbout{
@@ -71,9 +82,17 @@ nav ul li{
     display: flex;
     height: 0.5%;
 }
-.myLogin:hover , .mySignup:hover{
+.myLogin:hover{
     color: rgb(22, 210, 22);
     text-decoration: underline;
+    padding: 1.5px 0px;
+    font-size: 18px;
+}
+.mySignup:hover{
+    color: rgb(22, 210, 22);
+    text-decoration: underline;
+    padding: 1.5px 20px;
+    font-size: 18px;
 }
 
 .mySignup{
@@ -99,7 +118,7 @@ nav ul li{
     border-radius: 12px;
     padding: 34px;
     /* For Background Image */
-    background-image: url('bg/bg_8.jpg');
+    background-image: url('bg/bg_21.jpg');
 }
 #myVideo{
     z-index: -1;
@@ -177,7 +196,7 @@ nav ul li{
 /* For minimize screen background */
 @media only screen and (max-width: 1100px) {
     body {
-    background-color: rgb(22, 210, 22);
+    background-color: rgb(64, 67, 64);
     background-size: cover;
     }
 
