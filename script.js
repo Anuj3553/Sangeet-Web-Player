@@ -4,7 +4,7 @@ console.log("Welcome to Spotify");
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
-let songItemPlay = document.getElementById('songItemPlay');
+let songItemPlay = document.getElementsByClassName('songItemPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
@@ -133,3 +133,23 @@ document.getElementById('previous').addEventListener('click', ()=>{
     masterPlay.classList.add('fa-pause-circle');
     makeAllStop();
 })
+
+// const audio = document.getElementById("myAudio");
+const volumeControl = document.getElementById("volumeControl");
+const rangeInput = volumeControl.querySelector("input[type='range']");
+const volumeDown = volumeControl.querySelector(".fa-volume-down");
+const volumeUp = volumeControl.querySelector(".fa-volume-up");
+
+volumeControl.addEventListener("input", function() {
+audioElement.volume = rangeInput.value;
+});
+
+volumeDown.addEventListener("click", function() {
+rangeInput.value = Math.max(0, rangeInput.value - 0.1);
+audioElement.volume = rangeInput.value;
+});
+
+volumeUp.addEventListener("click", function() {
+rangeInput.value = Math.min(1, parseFloat(rangeInput.value) + 0.1);
+audioElement.volume = rangeInput.value;
+});

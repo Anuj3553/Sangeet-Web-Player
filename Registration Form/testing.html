@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="audioPlayer">
+        <audio id="myAudio">
+        <source src="yourAudioFile.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="volumeControl">
+        <i class="fas fa-volume-down"></i>
+        <input type="range" min="0" max="1" step="0.1" value="0.5">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    </div>
+</body>
+
+<script>
+const audio = document.getElementById("myAudio");
+const volumeControl = document.getElementById("volumeControl");
+const rangeInput = volumeControl.querySelector("input[type='range']");
+const volumeDown = volumeControl.querySelector(".fa-volume-down");
+const volumeUp = volumeControl.querySelector(".fa-volume-up");
+
+volumeControl.addEventListener("input", function() {
+audio.volume = rangeInput.value;
+});
+
+volumeDown.addEventListener("click", function() {
+rangeInput.value = Math.max(0, rangeInput.value - 0.1);
+audio.volume = rangeInput.value;
+});
+
+volumeUp.addEventListener("click", function() {
+rangeInput.value = Math.min(1, parseFloat(rangeInput.value) + 0.1);
+audio.volume = rangeInput.value;
+});
+
+</script>
+</html>

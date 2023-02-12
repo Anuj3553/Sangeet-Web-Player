@@ -32,7 +32,12 @@ nav ul li{
     cursor: pointer;
     transition: .2s linear;
     object-fit: cover;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    transition: .10s;
+}
+.brand img:hover{
+    transform: rotate(360deg);
+    width: 50px;
 }
 
 .brand {
@@ -85,13 +90,13 @@ nav ul li{
 .myLogin:hover{
     color: rgb(22, 210, 22);
     text-decoration: underline;
-    padding: 1.5px 0px;
+    padding: 0px 2px;
     font-size: 18px;
 }
 .mySignup:hover{
     color: rgb(22, 210, 22);
     text-decoration: underline;
-    padding: 1.5px 20px;
+    padding: 0px 20px;
     font-size: 18px;
 }
 
@@ -247,4 +252,31 @@ nav ul li{
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
+}
+
+#volumeControl {
+    position: fixed;
+    left: 75%;
+    color: #04ff19;
+    bottom: 0%;
+    height: 10%;
+}
+
+.fa-volume-up {
+    font-size: 20px;
+    color: #ddd;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa-volume-down{
+    font-size: 20px;
+    color: #ddd;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.rangeVolume{
+    width: 150px;
+    height: 5px;
 }

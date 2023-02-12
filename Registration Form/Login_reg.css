@@ -139,20 +139,21 @@ span{
     color: white;
 }
 .bcLogo{
-    width: 60px;
+    width: 70px;
     position:fixed;
-    padding: 34px;
+    left: 2.5%;
+    bottom: 85%;
     cursor: pointer;
-    object-fit: cover;
-    transform: scale(1.1);
+    transition: .10s;
 }
 .bcLogo:hover{
     width: 65px;
-    padding: 35px;
+    transform: rotate(360deg);
 }
 .brandName{
     position: fixed;
-    padding: 55px 110px;
+    left: 8%;    
+    bottom: 89%;
     font-size:larger;
     font-weight: bolder;
     cursor: pointer;
@@ -161,8 +162,8 @@ span{
 }
 .brandName:hover{
     text-decoration: underline;
-    padding: 57px 110px;
-    font-size: 20px;
+    padding: 0px 10px;
+    font-size: 21px;
 }
 #msg{
     color: white;
