@@ -212,6 +212,7 @@ nav ul li{
     position: absolute;
     left: 10vw;
     font-family: 'Varela Round', sans-serif;
+    display: flex;
 }
 
 .songInfo img{
@@ -225,7 +226,6 @@ nav ul li{
     background-color: rgb(64, 67, 64);
     background-size: cover;
     }
-
 }
 
 /* Search Bar */
@@ -277,8 +277,9 @@ nav ul li{
 
 #volumeControl {
     position: fixed;
-    left: 75%;
-    color: #04ff19;
+    left: 70%;
+    display: inline-flexbox;
+    float: left;
     bottom: 0%;
     height: 10.2%;
 }
