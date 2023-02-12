@@ -26,13 +26,23 @@ nav ul li{
     padding: 0 12px;
 }
 
+.titleSong{
+    color: #ffffff;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.1px;
+}
+.headingSong{
+    text-decoration: none;
+}
 .brand img{
     width: 44px;
     padding: 0 8px;
     cursor: pointer;
     transition: .2s linear;
     object-fit: cover;
-    /* transform: scale(1.1); */
     transition: .9s;
 }
 .brand img:hover{
@@ -173,17 +183,21 @@ nav ul li{
     border-radius: 34px;
 }
 .songItem:hover{
-    background: linear-gradient(to top , #007bff, #00ffbf, hsl(126, 84%, 57%));
-
+    background: linear-gradient(to top , #b7daff, #16ffc5, hsl(126, 93%, 66%));
 }
 
 .songItem img{
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
+    transition: 1s;
+}
+.songItem img:hover{
+    transform: rotate(360deg);
+    width: 47px;
 }
 .songItemPlay:hover{
-    color: rgb(255, 0, 0);
+    color: blue;
 }
 
 .timestamp{
@@ -266,7 +280,7 @@ nav ul li{
     left: 75%;
     color: #04ff19;
     bottom: 0%;
-    height: 10%;
+    height: 10.2%;
 }
 
 .fa-volume-up {
