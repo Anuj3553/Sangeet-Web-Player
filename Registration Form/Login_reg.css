@@ -139,20 +139,22 @@ span{
     color: white;
 }
 .bcLogo{
-    width: 70px;
+    width: 65px;
     position:fixed;
     left: 2.5%;
-    bottom: 85%;
+    bottom: 85.5%;
     cursor: pointer;
-    transition: .10s;
+    transition: .9s;
 }
 .bcLogo:hover{
-    width: 65px;
+    width: 70px;
+    left: 2.5%;
+    bottom: 85%;
     transform: rotate(360deg);
 }
 .brandName{
     position: fixed;
-    left: 8%;    
+    left: 7.5%;    
     bottom: 89%;
     font-size:larger;
     font-weight: bolder;

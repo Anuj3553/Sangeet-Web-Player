@@ -33,7 +33,7 @@ nav ul li{
     transition: .2s linear;
     object-fit: cover;
     /* transform: scale(1.1); */
-    transition: .10s;
+    transition: .9s;
 }
 .brand img:hover{
     transform: rotate(360deg);
@@ -52,7 +52,7 @@ nav ul li{
 .brand:hover{
     color: #04ff19;
     text-decoration: underline;
-    margin: 4px;
+    padding: 10px;
 }
 
 .myHome{
@@ -62,7 +62,7 @@ nav ul li{
 }
 .myHome:hover{
     text-decoration: underline;
-    padding: 2px;
+    padding: 4px;
     font-size: 17px;
 }
 .myAbout:hover{
@@ -172,11 +172,18 @@ nav ul li{
     align-items: center;
     border-radius: 34px;
 }
+.songItem:hover{
+    background: linear-gradient(to top , #007bff, #00ffbf, hsl(126, 84%, 57%));
+
+}
 
 .songItem img{
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
+}
+.songItemPlay:hover{
+    color: rgb(255, 0, 0);
 }
 
 .timestamp{
@@ -279,4 +286,7 @@ nav ul li{
 .rangeVolume{
     width: 150px;
     height: 5px;
+}
+input[type=range]{
+    color: #04ff19;
 }
