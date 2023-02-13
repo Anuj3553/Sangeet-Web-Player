@@ -36,14 +36,30 @@
             <li>
                 <a href="/Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
             </li>
+            
         </ul>
-    
-    
-        <video autoplay muted loop id="myVideo">
-            <source src="/gradient.mp4" type="video/mp4">
-        </video>
     </nav>
-    <!-- Songs Container -->
+<video autoplay muted loop id="myVideo">
+    <source src="/gradient.mp4" type="video/mp4">
+</video>
+<!-- User Drop Down Menu -->
+<div class="action">
+    <div class="profile" onclick="menuToggle()">
+        <img src="/profile.jpg" alt="">
+    </div>
+    <div class="menu">
+        <h3>Anuj Verma<br><span>@anujverma3553</span></h3>
+        <ul>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/618/618631.png" alt=""><a href="#">My Profile</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt=""><a href="#">Edit Profile</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/481/481659.png" alt=""><a href="#">Inbox</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/929/929872.png" alt=""><a href="#">Settings</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/953/953818.png" alt=""><a href="#">Help</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/1250/1250678.png" alt=""><a href="#">Logout</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Songs Container -->
     <div class="container">
         <div class="songList">
             <div >
@@ -127,5 +143,11 @@
     <script src="script.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
