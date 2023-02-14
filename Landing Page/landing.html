@@ -9,10 +9,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sangeet - Web Player | Home</title>
     <style>
-        
+        /* For Playing Vedio */
+        #myVideo{
+        z-index: -1;
+        position: fixed;
+        right: 10px;
+        top: 0;
+        }
     </style>
 </head>
 <body> 
+<!-- <video autoplay muted loop id="myVideo">
+    <source src="/Vedio/MyVideo.mp4" type="video/mp4">
+</video> -->
 <!-- This example requires Tailwind CSS v3.0+ -->
 <div class="isolate bg-white">
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
