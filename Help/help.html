@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Fevicon/Fevicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Help/style.css">
+    <title>Sangeet | Help</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <ul>
+            <li class="brand"><a href="/Fevicon/Fevicon.png"><img src="/Fevicon/Fevicon.png"></a></li>
+            <li>
+                <a href="/index.html" target="self" class="brand">Sangeet</a>
+            </li>
+            <li>
+                <a href="/Landing Page/landing.html" target="_self" class="myHome">Home</a>
+            </li>
+            <li>
+                <a href="https://support.spotify.com/us/article/what-is-spotify/" class="myAbout">About</a> 
+            </li>
+            <!--Search box to find songs-->
+            <li class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <!-- Adding login and signup button -->
+            <li>
+                <a href="/Registration Form/Login_reg.html" class="myLogin">Login</a> <!--Login Button-->
+            </li>
+            <li>
+                <a href="/Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
+            </li>
+            <li>
+                <div class="profile" onclick="menuToggle()">
+                    <img src="/user_icon.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <video autoplay muted loop id="myVideo">
+        <source src="/Vedio/gradient.mp4" type="video/mp4">
+    </video>
+    <div class="menuNav">
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                <h3>Anuj Verma<br><span>@anujverma3553</span></h3>
+                <ul>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/618/618631.png" alt=""><a href="/Applicant Detail/applicantDet.html">My Profile</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt=""><a href="/User Profile/userProfile.html">Edit Profile</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/481/481659.png" alt=""><a href="/User Profile/userProfile.html">Inbox</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/929/929872.png" alt=""><a href="/User Profile/userProfile.html">Settings</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/953/953818.png" alt=""><a href="/Help/help.html">Help</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/1250/1250678.png" alt=""><a href="/Landing Page/landing.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <h1 class="aboutSangeet">
+                What is Sangeet?
+            </h1>  
+            <p class="leading-relaxed text-lg" id="textSangeet">
+                
+                Sangeet is a digital music, podcast, and video service that gives you access to  songs and other content from creators.
+                Basic functions such as playing music are totally free, but you can also choose to upgrade to Spotify Premium.
+                Whether you have Premium or not, you can:
+                <ul>
+                    <li>
+                        Get recommendations based on your taste
+                    </li>
+                    <li>
+                        Build collections of music and podcasts
+                    </li>
+                </ul>
+                <div>And more!</div>
+                <div>
+                Sangeet is available across a range of devices, including computers, phones, tablets, speakers, TVs, and cars, and you can easily transition from one to another with Sangeet Connect.</div>
+                <div>
+                    Can I keep music from Sangeet?
+                </div>
+                <div>
+                    Our licensing means there's no way to export our content outside of the app.
+                </div>
+                </p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ANUJ VERMA</h2>
+            <p class="text-gray-500">Sangeet Web Player</p>
+        </div>
+        </div>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+<script>
+    function menuToggle() {
+        const toggleMenu = document.querySelector('.menu')
+        toggleMenu.classList.toggle('active')
+    }
+</script>
+</html>
