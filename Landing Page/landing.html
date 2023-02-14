@@ -16,6 +16,23 @@
         right: 10px;
         top: 0;
         }
+        a img{
+            animation: 5s;
+            transition: .2s linear;
+            object-fit: cover;
+        }
+        a img:hover{
+            transform: rotate(360deg);
+            width: 30px;
+        }
+        #textNavi:hover{
+            text-decoration: underline;
+            color: blue;
+            font-weight: bold;
+        }
+        #learnMore:hover{
+            color: rgb(255, 0, 0);
+        }
     </style>
 </head>
 <body> 
@@ -40,7 +57,7 @@
         <div class="flex lg:flex-1">
         <a href="/Landing Page/landing.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-8" src="/Fevicon/Fevicon.png" alt="">
+            <img class="h-8" id="logoNav" src="/Fevicon/Fevicon.png" alt="">
         </a>
         </div>
         <div class="flex lg:hidden">
@@ -53,16 +70,20 @@
         </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Enjoy</a>
+        <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="">🎵🎶</a>
+
+        <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Enjoy</a>
     
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Music</a>
+        <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Music</a>
     
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Eveywhere</a>
+        <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Eveywhere</a>
+
+        <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="">🎵🎶</a>
     
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">🎧</a>
+        <!-- <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900"></a> -->
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/Registration Form/Login_reg.html" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="/Registration Form/Login_reg.html" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
     </nav>
     </div>
@@ -79,7 +100,7 @@
             <p class="mt-6 text-lg leading-8 text-gray-600">Sangeet is the one-stop music streaming, made in India app for all your music needs. Sangeet offers you free, unlimited online access to all your favourite...</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="/Registration Form/Login_reg.html" class="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-            <a href="https://en.wikipedia.org/wiki/Music_player" class="text-base font-semibold leading-7 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+            <a href="https://en.wikipedia.org/wiki/Music_player" class="text-base font-semibold leading-7 text-gray-900" id="learnMore">Learn more <span aria-hidden="true">→</span></a>
             </div>
         </div>
         </div>
