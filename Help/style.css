@@ -288,12 +288,12 @@ nav ul li{
     color: rgb(0, 0, 0);
 }
 
-.text-gray-500{
+.text-gray-900{
     color: blue;
     font-weight: bolder;
 }
 
-.text-gray-900 {
+#sangeetName{
     color: rgb(255, 0, 0);
     font-weight: bold;
 }
@@ -308,4 +308,9 @@ ul li{
 
 div{
     color: white;
+}
+
+#blockContainer{
+    border: 3px solid black;
+    border-radius: 13px;
 }
