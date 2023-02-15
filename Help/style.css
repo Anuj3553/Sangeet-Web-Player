@@ -222,7 +222,7 @@ nav ul li{
 .profile img{
     width: 50px;
     position: relative;
-    left: 1055px;
+    left: 1039px;
     border-radius: 50%;
 }
 
@@ -273,6 +273,7 @@ nav ul li{
     line-height: 40px;
     width: 0px;
 }
+
 
 /* For Playing Vedio */
 #myVideo{
