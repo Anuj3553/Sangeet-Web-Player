@@ -276,17 +276,11 @@ nav ul li{
 
 
 /* For Playing Vedio */
-#myVideo{
-    z-index: -1;
-    position: fixed;
-    right: 10px;
-    top: 0;
-}
 
 .aboutSangeet{
     font-size: 30px;
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: red;
 }
 
 .text-gray-900{
@@ -295,23 +289,18 @@ nav ul li{
 }
 
 #sangeetName{
-    color: rgb(255, 0, 0);
+    color: black;
     font-weight: bold;
 }
 
 #textSangeet{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 ul li{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 div{
-    color: white;
-}
-
-#blockContainer{
-    border: 3px solid black;
-    border-radius: 13px;
+    color: rgb(0, 0, 0);
 }
