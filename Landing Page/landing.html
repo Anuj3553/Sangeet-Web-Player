@@ -10,13 +10,12 @@
     <title>Sangeet - Web Player | Home</title>
     <style>
         a img{
-            animation: 5s;
+            animation: 8s;
             transition: .2s linear;
             object-fit: cover;
         }
         a img:hover{
             transform: rotate(360deg);
-            width: 30px;
         }
         #textNavi:hover{
             text-decoration: underline;
@@ -25,6 +24,15 @@
         }
         #learnMore:hover{
             color: rgb(255, 0, 0);
+        }
+        .gifSong{
+            position: absolute;
+            width: 300px;
+            scale: 60%;
+            left: 40%;
+            height: 40%;
+            top: 3%;
+            border-radius: 300px;
         }
         .mainBack{
             background: linear-gradient(to top , #affe9f, #8bd6c3, hsl(173, 100%, 69%));
@@ -50,15 +58,15 @@
         </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-        <a href="/Gif/gif1.gif" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="">🎵🎶</a>
+        <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">🎵🎶</a>
 
-        <a href="/Gif/gif2.gif" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Enjoy</a>
+        <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">Enjoy</a>
     
-        <a href="/Gif/gif3.gif" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Music</a>
+        <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">Music</a>
     
-        <a href="/Gif/gif4.gif" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Eveywhere</a>
+        <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">Eveywhere</a>
 
-        <a href="/Gif/gif5.gif" target="_blank" class="text-sm font-semibold leading-6 text-gray-900" id="">🎵🎶</a>
+        <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">🎵🎶</a>
     
         <!-- <a href="/Vedio/MyVideo.mp4" target="_blank" class="text-sm font-semibold leading-6 text-gray-900"></a> -->
         </div>
@@ -66,6 +74,9 @@
         <a href="/Registration Form/Login_reg.html" class="text-sm font-semibold leading-6 text-gray-900" id="textNavi">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
     </nav>
+    </div>
+    <div>
+        <img class="gifSong" src="/Gif/gif1.gif" alt="">
     </div>
     <main>
     <div class="relative px-6 lg:px-8">
