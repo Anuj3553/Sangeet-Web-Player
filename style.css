@@ -420,7 +420,8 @@ input[type=range]{
 }
 .profile img{
     width: 50px;
-    position: relative;
-    left: 1017px;
+    position: absolute;
+    top: 8px;
+    right: 65px;
     border-radius: 50%;
 }
