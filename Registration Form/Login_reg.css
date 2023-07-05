@@ -12,6 +12,7 @@
     position: absolute;
     color: white;
 }
+
 .form-box{
     width: 380px;
     height: 480px;
@@ -96,10 +97,7 @@ input[type=button] {
     border-radius: 30px;
     color: white;
 }
-input[type=button]:hover{
-    width: 100%;
-    left: 0%;
-}
+
 .submit-btn2{
     width: 80%;
     padding: 15px 80px;
@@ -116,10 +114,7 @@ input[type=button]:hover{
     border-radius: 30px;
     color: white;
 }
-.submit-btn2:hover{
-    width: 100%;
-    margin: 0px 3px;
-}
+
 .check-box{
     margin: 30px 10px 30px 0;
 }
@@ -146,12 +141,7 @@ span{
     cursor: pointer;
     transition: .9s;
 }
-.bcLogo:hover{
-    width: 70px;
-    left: 2.5%;
-    bottom: 85%;
-    transform: rotate(360deg);
-}
+
 .brandName{
     position: fixed;
     left: 7.5%;    
@@ -164,8 +154,6 @@ span{
 }
 .brandName:hover{
     text-decoration: underline;
-    padding: 0px 10px;
-    font-size: 21px;
 }
 #msg{
     color: white;
