@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body{
-    background-color: rgb(59, 65, 58);
-}
 
 *{
     margin: 0;
@@ -18,6 +15,8 @@ nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
+    position: relative;
+    width: 100%;
     height: 65px;
     background-color: black;
     color: white;
@@ -46,10 +45,6 @@ nav ul li{
     object-fit: cover;
     transition: .9s;
 }
-.brand img:hover{
-    transform: rotate(360deg);
-    width: 50px;
-}
 
 .brand {
     display: flex;
@@ -63,7 +58,6 @@ nav ul li{
 .brand:hover{
     color: #04ff19;
     text-decoration: underline;
-    padding: 10px;
 }
 
 .myHome{
@@ -73,13 +67,9 @@ nav ul li{
 }
 .myHome:hover{
     text-decoration: underline;
-    padding: 4px;
-    font-size: 17px;
 }
 .myAbout:hover{
     text-decoration: underline;
-    padding: 2px;
-    font-size: 17px;
 }
 
 .myAbout{
@@ -101,14 +91,10 @@ nav ul li{
 .myLogin:hover{
     color: rgb(22, 210, 22);
     text-decoration: underline;
-    padding: 0px 2px;
-    font-size: 18px;
 }
 .mySignup:hover{
     color: rgb(22, 210, 22);
     text-decoration: underline;
-    padding: 0px 20px;
-    font-size: 18px;
 }
 
 .mySignup{
@@ -141,8 +127,7 @@ nav ul li{
 #myVideo{
     z-index: -1;
     position: fixed;
-    right: 10px;
-    top: 0;
+    bottom: 5%;
 }
 
 .bottom{
@@ -195,10 +180,8 @@ nav ul li{
     border-radius: 34px;
     transition: 1s;
 }
-.songItem img:hover{
-    transform: rotate(360deg);
-    width: 47px;
-}
+
+
 .songItemPlay:hover{
     color: blue;
 }
@@ -223,21 +206,15 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
-/* For minimize screen background */
-@media only screen and (max-width: 1100px) {
-    body {
-    background-color: rgb(64, 67, 64);
-    background-size: cover;
-    }
-}
-
 /* Search Bar */
 .search-box{
     position: absolute;
-    top: 4%;
+    top: 32px;
+    display: flex;
+    align-items: center;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #080808;
+    background: rgb(8, 8, 8);
     height: 40px;
     border-radius: 40px;
     padding: 5px;
@@ -279,11 +256,10 @@ nav ul li{
 }
 
 #volumeControl {
-    position: fixed;
-    left: 70%;
-    display: inline-flexbox;
+    position: relative;
+    left: 28%;
     float: left;
-    bottom: 0%;
+    bottom: 39px;
     height: 10.2%;
 }
 
@@ -420,7 +396,16 @@ input[type=range]{
 }
 .profile img{
     width: 50px;
-    position: relative;
-    left: 1017px;
+    position: absolute;
+    top: 8px;
+    right: 65px;
     border-radius: 50%;
+}
+
+/* For minimize screen background */
+@media only screen and (max-width: 1450px) {
+    body {
+    background-color: rgb(64, 67, 64);
+    background-size: cover;
+    }
 }
