@@ -1,126 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="icon" href="/Fevicon/Fevicon.png">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sangeet - Web Player</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
+
+<head>
+    <link rel="icon" href="./Fevicon/Fevicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <!-- Top Navigation Bar -->
     <nav>
         <ul>
-            <li class="brand"><a href="/Fevicon/Fevicon.png"><img src="/Fevicon/Fevicon.png"></a></li>
+            <li class="brand"><a href="./index.html"><img src="./Fevicon/Fevicon.png"></a></li>
             <li>
-                <a href="/index.html" target="self" class="brand">Sangeet</a>
+                <a href="./index.html" target="self" class="brand">Sangeet</a>
             </li>
             <li>
-                <a href="/Landing Page/landing.html" target="_self" class="myHome">Home</a>
+                <a href="./Landing Page/landing.html" target="_self" class="myHome">Home</a>
             </li>
             <li>
-                <a href="/Help/help.html" class="myAbout">About</a> 
+                <a href="./Help/help.html" class="myAbout">About</a>
             </li>
             <!--Search box to find songs-->
             <li class="search-box">
                 <input class="search-txt" type="text" name="" placeholder="Type to search">
                 <a class="search-btn" href="#">
-            <i class="fas fa-search"></i>
+                    <i class="fas fa-search"></i>
                 </a>
             </li>
             <!-- Adding login and signup button -->
             <li>
-                <a href="/Registration Form/Login_reg.html" class="myLogin">Login</a> <!--Login Button-->
+                <a href="./Registration Form/Login_reg.html" class="myLogin">Login</a> <!--Login Button-->
             </li>
             <li>
-                <a href="/Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
+                <a href="./Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
             </li>
-            <li>
-                <div class="profile" onclick="menuToggle()">
-                    <img src="/user_icon.jpg" alt="">
-                </div>
-            </li>
+            <div class="profile" onclick="menuToggle()">
+                <img src="/user_icon.jpg" alt="">
+            </div>
         </ul>
     </nav>
-<video autoplay muted loop id="myVideo">
-    <source src="/Vedio/gradient.mp4" type="video/mp4">
-</video>
-<!-- User Drop Down Menu -->
-<div class="menuNav">
-<div class="action">
-    <div class="profile" onclick="menuToggle()">
-        <img src="" alt="">
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./Vedio/gradient.mp4" type="video/mp4">
+    </video>
+    <!-- User Drop Down Menu -->
+    <div class="menuNav">
+        <div class="action">
+            <div class="profile" onclick="menuToggle()">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                <h3>Anuj Verma<br><span>@anujverma3553</span></h3>
+                <ul>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/618/618631.png" alt=""><a
+                            href="./Applicant Detail/applicantDet.html">My Profile</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt=""><a
+                            href="./User Profile/userProfile.html">Edit Profile</a></li>
+                    <!-- <li><img src="https://cdn-icons-png.flaticon.com/512/481/481659.png" alt=""><a href="/Notification/notification.html">Inbox</a></li> -->
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/953/953818.png" alt=""><a
+                            href="./Help/help.html">Help</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/929/929872.png" alt=""><a
+                            href="./Setting/setting.html">Setting</a></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/1250/1250678.png" alt=""><a
+                            href="./Landing Page/landing.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="menu">
-        <h3>Anuj Verma<br><span>@anujverma3553</span></h3>
-        <ul>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/618/618631.png" alt=""><a href="/Applicant Detail/applicantDet.html">My Profile</a></li>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt=""><a href="/User Profile/userProfile.html">Edit Profile</a></li>
-            <!-- <li><img src="https://cdn-icons-png.flaticon.com/512/481/481659.png" alt=""><a href="/Notification/notification.html">Inbox</a></li> -->
-            <li><img src="https://cdn-icons-png.flaticon.com/512/953/953818.png" alt=""><a href="/Help/help.html">Help</a></li>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/929/929872.png" alt=""><a href="/Setting/setting.html">Setting</a></li>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/1250/1250678.png" alt=""><a href="/Landing Page/landing.html">Logout</a></li>
-        </ul>
-    </div>
-</div>
-</div>
-<!-- Songs Container -->
+    <!-- Songs Container -->
     <div class="container">
         <div class="songList">
-            <div >
-                <a class="headingSong"><h1 class="titleSong" >Best of Songs - Sangeet Hits</h1></a>
+            <div>
+                <a class="headingSong">
+                    <h1 class="titleSong">Best of Songs - Sangeet Hits</h1>
+                </a>
             </div>
             <div class="songItemContainer">
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Warriyo - Mortals</span>
-                    <span class="songlistplay"><span class="timestamp">03:50<i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:50<i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Cielo - Huma</span>
-                    <span class="songlistplay"><span class="timestamp">02:33<i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">02:33<i id="1"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">DEAF KEV - Invincible</span>
-                    <span class="songlistplay"><span class="timestamp">04:33<i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">04:33<i id="2"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Different Heaven & EHIDE</span>
-                    <span class="songlistplay"><span class="timestamp">10:48<i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">10:48<i id="3"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Attack On Titan(Theme)</span>
-                    <span class="songlistplay"><span class="timestamp">05:02<i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">05:02<i id="4"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Tu Aake Aekh Le</span>
-                    <span class="songlistplay"><span class="timestamp">04:36<i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">04:36<i id="5"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Khwabon Khayalon Me</span>
-                    <span class="songlistplay"><span class="timestamp">02:14<i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">02:14<i id="6"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Bella Chao</span>
-                    <span class="songlistplay"><span class="timestamp">03:29<i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:29<i id="7"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Bolo Har Har</span>
-                    <span class="songlistplay"><span class="timestamp">02:39<i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">02:39<i id="8"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Butterfly</span>
-                    <span class="songlistplay"><span class="timestamp">04:27<i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">04:27<i id="9"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
             </div>
         </div>
@@ -132,12 +151,16 @@
             <!-- fontawesome icons -->
             <i class="fas fa-3x fa-step-backward" id="previous"></i>
             <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
         </div>
         <!-- Song Info -->
         <div class="songInfo">
             <!-- Playing GIF under progress bar -->
-            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals </span>
+            <span>
+                <img src="playing.gif" width="42px" alt="" id="gif">
+                &nbsp;
+            </span>
+            <span id="masterSongName">&nbsp;Warriyo - Mortals</span>
         </div>
         <!-- Volume Conrol -->
         <div id="volumeControl">
@@ -156,4 +179,5 @@
         }
     </script>
 </body>
+
 </html>
