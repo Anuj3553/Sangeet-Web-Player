@@ -1,266 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav{
-    font-family: 'Ubuntu', sans-serif;
+nav {
+    font-family: "Ubuntu", sans-serif;
 }
 
-nav ul{
-    display: flex;
+nav ul {
     align-items: center;
-    list-style-type: none;
-    position: relative;
-    width: 100%;
-    height: 65px;
-    background-color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
-nav ul li{
-    padding: 0 12px;
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(1, 255, 26);
+    text-decoration: underline;
 }
 
-.titleSong{
-    color: #ffffff;
-    font-size: 1.8em;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.1px;
+.navbar {
+    background-color: black;
 }
-.headingSong{
-    text-decoration: none;
+
+nav ul li {
+    padding: 0 12px;
+    margin: 0 5px;
 }
-.brand img{
-    width: 44px;
-    padding: 0 8px;
+
+.brand img {
+    width: 60px;
+    padding: 0 9px;
     cursor: pointer;
-    transition: .2s linear;
-    object-fit: cover;
-    transition: .9s;
 }
 
 .brand {
     display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
-.brand:hover{
-    color: #04ff19;
-    text-decoration: underline;
-}
-
-.myHome{
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-}
-.myHome:hover{
-    text-decoration: underline;
-}
-.myAbout:hover{
-    text-decoration: underline;
-}
-
-.myAbout{
-    cursor: pointer;
-    color: white;
     text-decoration: none;
 }
 
-.myLogin{
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.btn-outline-success:hover {
+    background-color: #00c853;
+    color: white;
+}
+
+/* #navbarScroll{
+    background-color: black;
+} */
+
+/* User Drop Down Menu */
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
-    left: 80%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    align-items: center;    
-    display: flex;
-    height: 0.5%;
+    left: -2rem;
+    background-color: black;
+    border: 3px solid rgb(255, 255, 255);
 }
-.myLogin:hover{
-    color: rgb(22, 210, 22);
-    text-decoration: underline;
+
+.profile-img img {
+    width: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.mySignup:hover{
-    color: rgb(22, 210, 22);
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(1, 255, 26);
     text-decoration: underline;
 }
 
-.mySignup{
-    position: absolute;
-    left: 85%;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: flex;
-    height: 0.5%;
-    padding: 0 20px;
 }
 
-.container{
+.dropdown-item {
+    color: white;
+}
+
+/* Container */
+
+.headingSong {
+    text-decoration: none;
+}
+
+.container {
     min-height: 72vh;
     background-color: black;
     color: white;
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Varela Round", sans-serif;
     display: flex;
     margin: 23px auto;
     width: 70%;
     border-radius: 12px;
     padding: 34px;
     /* For Background Image */
-    background-image: url('bg/bg_21.jpg');
+    background-size: cover;
+    background-image: url("bg/bg_8.jpg");
+}
+
+.songList{
+    width: 100%;
+}
+.titleSong {
+    color: #ffffff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.09px;
 }
 
 /* For Playing Vedio */
-#myVideo{
+#myVideo {
+    width: fit-content;
     z-index: -1;
     position: fixed;
+    scale: 3;
     bottom: 5%;
 }
 
-.bottom{
-    position: sticky;
-    bottom: 0;
-    height: 130px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-}
-
-.icons{
-    margin-top: 14px; 
-}
-
-.icons i{
-    cursor: pointer;
-}
-
-#myProgressBar{
-    width: 80vw; 
-    cursor: pointer;
-}
-
-.songItemContainer{
+.songItemContainer {
     margin-top: 34px;
 }
 
-.songItem{
-    height: 50px;
+.container{
+    width: 90%;
+}
+.songItem {
+    height: 60px;
     display: flex;
     background-color: white;
-    width: 80%;
+    width: 45%;
     color: black;
     margin: 12px 0;
+    font-size: medium;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
 }
-.songItem:hover{
-    background: linear-gradient(to top , #b7daff, #16ffc5, hsl(126, 93%, 66%));
+
+.songItem:hover {
+    background: linear-gradient(to top, #b7daff, #16ffc5, hsl(126, 93%, 66%));
 }
 
-.songItem img{
+.songItem img {
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
     transition: 1s;
 }
 
-
-.songItemPlay:hover{
+.songItemPlay:hover {
     color: blue;
 }
 
-.timestamp{
+.timestamp {
     margin: 0 23px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
-.timestamp i{
+.timestamp i {
     cursor: pointer;
 }
 
-.songInfo{
-    position: absolute;
-    left: 10vw;
-    font-family: 'Varela Round', sans-serif;
+/* Bottom Section */
+
+.bottom {
+    position: sticky;
+    height: 30px;
+    background-color: black;
     display: flex;
+    justify-content: center;
 }
 
-.songInfo img{
+.bottomContainer {
+    position: sticky;
+    width: 100%;
+    justify-content: space-around;
+    height: 70px;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.songInfo img {
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
 
-/* Search Bar */
-.search-box{
-    position: absolute;
-    top: 32px;
+/* #masterSongName{
     display: flex;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(8, 8, 8);
-    height: 40px;
-    border-radius: 40px;
-    padding: 5px;
+    bottom: 36px;
+    position: relative;
+} */
+
+.icons {
+    margin-top: 14px;
 }
 
-.search-box:hover>.search-txt{
-    width: 200px;
-    padding: 0 10px;
+.icons i {
+    cursor: pointer;
 }
 
-.search-box:hover> .search-btn{
-    background: white;
-}
-
-.search-btn{
-    color: #04ff19;
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
-
-.search-txt{
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
 }
 
 #volumeControl {
-    position: relative;
-    left: 28%;
-    float: left;
-    bottom: 39px;
-    height: 10.2%;
+    #volumeControl {
+        position: absolute;
+        right: 200px;
+        bottom: 40px;
+    }
 }
 
 .fa-volume-up {
@@ -270,142 +241,105 @@ nav ul li{
     cursor: pointer;
 }
 
-.fa-volume-down{
+.fa-volume-down {
     font-size: 20px;
     color: #ddd;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.rangeVolume{
-    width: 150px;
-    height: 5px;
+.rangeVolume {
+    width: 8rem;
 }
-input[type=range]{
+
+input[type="range"] {
     color: #04ff19;
 }
-/* User Drop Down Menu */
-.action {
-    position: fixed;
-    top: 10px;
-    right: 65px;
-}
 
-.action .profile {
-    position: relative;
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-}
+/* Footer */
 
-.action .profile img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.text-footer{
     width: 100%;
-    right: 10px;
-    object-fit: cover;
-}
-.action .profile img:hover{
-    transform: scale(105%);
-}
-.action .menu {
-    position: absolute;
-    top: 80px;
-    right: -10px;
-    padding: 10px 20px;
-    width: 200px;
-    background: linear-gradient(to top , #add2f9, #91f9df, hsl(126, 93%, 66%));
-    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    transition: 0.5s;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.action .menu.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.action .menu::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: 28px;
-    width: 20px;
-    height: 20px;
-    background-color: hsl(126, 93%, 66%);
-    transform: rotate(45deg);
-}
-
-.action .menu h3 {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 20px 0;
-    color: #000000;
-    line-height: 1.2rem;
-}
-
-.action .menu h3 span {
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-}
-
-.action .menu ul li {
-    list-style: none;
-    padding: 10px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    height: 30px;
+    margin: auto;
     display: flex;
     align-items: center;
-}
-
-.action .menu ul li img {
-    max-width: 20px;
-    margin-right: 10px;
-    opacity: 0.5;
-    transition: 0.5s ease   ;
-}
-
-.action .menu ul li:hover img {
-    opacity: 1;
-}
-
-.action .menu ul li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-    transition: 0.5s ease;
-}
-
-.action .menu ul li:hover a {
-    color: blue;
-}
-.menuNav{
-    position: relative;
-    top: 80px;
-    right: -10px;
-    padding: 10px 20px;
-    width: 200px;
-}
-.profile img{
-    width: 50px;
-    position: absolute;
-    top: 8px;
-    right: 65px;
-    border-radius: 50%;
+    justify-content: center;
+    color: white;
+    background-color: black;
 }
 
 /* For minimize screen background */
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 700px) {
     body {
-    background-color: rgb(64, 67, 64);
-    background-size: cover;
+        background-size: cover;
     }
+
+    .titleSong{
+        text-align: center;
+    }
+    .songItem{
+        width: 100%;
+    }
+
+    .songItemContainer {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottomContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        border: 20px solid black;
+        gap: 10px;
+    }
+
+    .masterSongName{
+        text-align: center;
+    }
+
+    .songInfo img{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    span img{
+        margin: auto;
+    }
+
+    .bottom{
+        height: 60px;
+    }
+
+    .songInfo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text-footer{
+        font-size: medium;
+        text-align: center;
+        height: 80px;
+        border: 20px solid black;
+      }
+}
+
+@media screen and (max-width: 280px) {
+  .songItem{
+    flex-direction: column;
+    height: 120px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 4px;
+  }
+  .text-footer{
+    font-size: small;
+    text-align: center;
+    height: 40px;
+    border: 20px solid black;
+  }
 }
