@@ -118,7 +118,7 @@ nav ul li {
 }
 .titleSong {
     color: #ffffff;
-    font-size: 1.8em;
+    font-size: 2rem;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.09px;
@@ -277,6 +277,7 @@ input[type="range"] {
 
     .titleSong{
         text-align: center;
+        font-size: xx-large;
     }
     .songItem{
         width: 100%;
@@ -326,6 +327,7 @@ input[type="range"] {
         height: 80px;
         border: 20px solid black;
       }
+
 }
 
 @media screen and (max-width: 280px) {

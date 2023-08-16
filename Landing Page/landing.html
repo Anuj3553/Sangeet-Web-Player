@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Sangeet - Web Player | Home</title>
     <style>
         a img{
@@ -33,6 +35,7 @@
         .gifSong {
             display: block;
             border-radius: 500px;
+            margin: 7rem 0;
         }
         .mainBack{
             background: linear-gradient(to top , #affe9f, #8bd6c3, hsl(173, 100%, 69%));
@@ -40,6 +43,23 @@
         #container1 {
             padding-top: 0.5rem;
             height: 540px;
+        }
+
+        @media screen and (max-width: 650px) {
+          .topNavBar{
+            display: none;
+          }
+          .tagLine{
+            display: flex;
+            margin: 14px 0;
+            justify-content: center;
+          }
+        }
+
+        @media screen and (max-width: 400px) {
+          .tagLine{
+            display: none;
+          }
         }
     </style>
 </head>
@@ -52,7 +72,7 @@
             <img class="h-8" id="logoNav" src="../Fevicon/Fevicon.png" alt="">
         </a>
         </div>
-        <div class="lg:flex lg:gap-x-12">
+        <div class="lg:flex lg:gap-x-12 topNavBar">
         <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">🎵🎶</a>
 
         <a class="text-sm font-semibold leading-6 text-gray-900" id="topNav">Enjoy</a>
@@ -76,7 +96,7 @@
     <main>
     <div class="relative px-6 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56" id="container1">
-        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+        <div class="tagLine sm:mb-8 sm:flex sm:justify-center">
             <div class="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Alone, it's music. Together, its magic. <a href="../Help/help.html" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -93,6 +113,10 @@
     </div>
     </main>
     </div>
-    
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; 2023 wwww.SangeetWebPlayer.com - All rights reserved
+        </p>
+    </footer>
 </body>
 </html>

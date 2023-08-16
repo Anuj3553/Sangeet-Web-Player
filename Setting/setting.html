@@ -6,61 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="..style.css">
-    <title>Sangeet | Edit Profile</title>
+    <title>Sangeet | Setting</title>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <nav>
-        <ul>
-            <li class="brand"><a href="../Fevicon/Fevicon.png"><img src="../Fevicon/Fevicon.png"></a></li>
-            <li>
-                <a href="../index.html" target="self" class="brand">Sangeet</a>
-            </li>
-            <li>
-                <a href="../Landing Page/landing.html" target="_self" class="myHome">Home</a>
-            </li>
-            <li>
-                <a href="../Help/help.html" class="myAbout">About</a> 
-            </li>
-            <!-- Adding login and signup button -->
-            <li>
-                <a href="../Registration Form/Login_reg.html" class="myLogin">Login</a> <!--Login Button-->
-            </li>
-            <li>
-                <a href="../Registration Form/Login_reg.html" class="mySignup">Signup</a> <!--Signup Button-->
-            </li>
-            <li>
-                <div class="profile" onclick="menuToggle()">
-                    <img src="../user_icon.jpg" alt="">
-                </div>
-            </li>
-        </ul>
-    </nav>
-    <div class="menuNav">
-        <div class="action">
-            <div class="profile" onclick="menuToggle()">
-                <img src="" alt="">
-            </div>
-            <div class="menu">
-                <h3>Anuj Verma<br><span>@anujverma3553</span></h3>
-                <ul>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/618/618631.png" alt=""><a href="../Applicant Detail/applicantDet.html">My Profile</a></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt=""><a href="../User Profile/userProfile.html">Edit Profile</a></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/953/953818.png" alt=""><a href="../Help/help.html">Help</a></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/929/929872.png" alt=""><a href="../Setting/setting.html">Setting</a></li>
-                    <li><img src="https://cdn-icons-png.flaticon.com/512/1250/1250678.png" alt=""><a href="../Landing Page/landing.html">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <!-- Notification Page -->
         <div class="mt-10 sm:mt-0">
         <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
             <div class="px-4 sm:px-0">
-            <h3 class="text-lg font-medium leading-6 text-gray-900">Notifications</h3>
+            <h3 class="text-lg font-medium leading-6 text-gray-900">Settings</h3>
             <p class="mt-1 text-sm text-gray-600">Decide which communications you'd like to receive and how.</p>
             </div>
         </div>
@@ -128,12 +85,13 @@
         </div>
         </div>
         </div>
+
+        <footer>
+            <p class="text-footer">
+                Copyright &copy; 2023 wwww.SangeetWebPlayer.com - All rights reserved
+            </p>
+        </footer>
 </body>
 <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
-<script>
-    function menuToggle() {
-        const toggleMenu = document.querySelector('.menu')
-        toggleMenu.classList.toggle('active')
-    }
 </script>
 </html>
