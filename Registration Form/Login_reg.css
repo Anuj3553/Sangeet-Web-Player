@@ -108,6 +108,10 @@ input[type=button] {
     color: white;
 }
 
+a, button{
+    -webkit-tap-highlight-color: transparent !important;
+}
+
 .submit-btn{
     width: 80%;
     left: 10%;
@@ -229,9 +233,12 @@ span{
 
 @media screen and (max-width: 300px) {
   .form-box{
-    scale: 0.9;
+    scale: 0.7;
+    margin: 0 -40px;
   }
   input[type=button], .submit-btn {
     width: 40%;
+    position: relative;
+    left: 66px;
   }
 }
