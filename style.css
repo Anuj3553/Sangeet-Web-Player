@@ -40,6 +40,10 @@ nav ul li {
     cursor: pointer;
 }
 
+.navbar-brand{
+    font-size: 1.75rem;
+}
+
 .brand {
     display: flex;
     text-decoration: none;
@@ -70,6 +74,10 @@ nav ul li {
     padding: 2px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.profile-img :hover{
+    outline: 2px solid #04ff19;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -137,7 +145,7 @@ nav ul li {
     width: 90%;
 }
 .songItem {
-    height: 60px;
+    height: 55px;
     display: flex;
     background-color: white;
     width: 45%;
@@ -157,7 +165,6 @@ nav ul li {
     width: 43px;
     margin: 0 23px;
     border-radius: 34px;
-    transition: 1s;
 }
 
 .songItemPlay:hover {
@@ -166,13 +173,14 @@ nav ul li {
 
 .timestamp {
     margin: 0 23px;
-    flex-direction: column;
     display: flex;
     align-items: center;
 }
 
 .timestamp i {
     cursor: pointer;
+    font-size: larger;
+    margin: 0 20px;
 }
 
 /* Bottom Section */
@@ -266,7 +274,7 @@ input[type="range"] {
 }
 
 /* For minimize screen background */
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 990px) {
     body {
         background-size: cover;
     }
@@ -324,9 +332,18 @@ input[type="range"] {
         border: 20px solid black;
       }
 
+    .navbar-nav{
+        height: 100vh;
+    }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 450px) {
+    .timestamp{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 370px) {
   .songItem{
     flex-direction: column;
     height: 120px;
